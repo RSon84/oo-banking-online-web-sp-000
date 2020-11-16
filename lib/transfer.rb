@@ -47,7 +47,7 @@ def execute_transaction
 end
 
 def bad_transfer
-  @status = "rejected"
+  self.status = "rejected"
   return "Transaction rejected. Please check your account balance."
 end
 
