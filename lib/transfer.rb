@@ -29,7 +29,7 @@ end
 
 
 def execute_transaction
-  if @sender.balance > @amount && valid?
+  if @sender.balance > @amount && valid? && self.status == "pending"
     # @status = "rejected"
     # return "Transaction rejected. Please check your account balance."
   #
