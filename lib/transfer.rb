@@ -40,7 +40,7 @@ def execute_transaction
     # @receiver.deposit( @amount )
         @sender.balance -= amount
         @receiver.balance += amount
-    @status = "complete"
+    self.status = "complete"
   else
     bad_transfer
   end
