@@ -30,4 +30,9 @@ def bad_transfer
   return "Transaction rejected. Please check your account balance."
 end
 
+def reverse_transfer
+  execute_transaction.reverse
+  self.status = "reversed"
+end
+
 end
