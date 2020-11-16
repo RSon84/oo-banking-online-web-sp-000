@@ -11,10 +11,6 @@ class Transfer
   end
 
   def valid?
-    if @sender.status = "open" && @receiver.status = "open"
-      true
-    else
-      false
-end
+    @sender.valid? && @receiver.valid? ? true : false
 end
 end
