@@ -38,5 +38,6 @@ def reverse_transfer
 else
   bad_transfer
 end
+end
 
 end
