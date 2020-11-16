@@ -35,8 +35,7 @@ def reverse_transfer
   @sender.balance += amount
   @receiver.balance -= amount
   self.status = "reversed"
-else
-  bad_transfer
+
 end
 end
 
